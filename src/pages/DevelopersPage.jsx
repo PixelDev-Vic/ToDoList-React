@@ -55,7 +55,7 @@ export default function DevelopersPage() {
               </div>
               <div>
                 <dt className="text-xs font-medium text-muted">Role or contribution</dt>
-                <dd className="mt-1 text-sm font-medium text-ink">Tangang Bobong Adik</dd>
+                <dd className="mt-1 text-sm font-medium text-ink">Developer</dd>
               </div>
             </dl>
 
