@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f6f8ff;
+  --color-surface: #ffffff;
+  --color-ink: #172033;
+  --color-muted: #65718a;
+  --color-line: #dce5f7;
+  --color-accent: #4169e1;
+  --color-accent-hover: #3154c8;
+  --color-accent-soft: #eaf0ff;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #172033;
+  background: #f6f8ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #f6f8ff;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+  transition-duration: 100ms;
+}
+
+::selection {
+  color: #172033;
+  background: #dce7ff;
+}
+
+.app-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #b8c8ed transparent;
+}
+
+.app-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.app-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 10px;
+  margin-inline: 2px;
+}
+
+.app-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.app-scrollbar::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: #b8c8ed;
+  background-clip: content-box;
+}
+
+.app-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4169e1;
+  background-clip: content-box;
+}
+
+:focus-visible {
+  outline-color: #4169e1;
+}
+
+.mobile-nav {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+.mobile-nav-link {
+  display: flex;
+  min-height: 3.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  border-radius: 0.75rem;
+  color: #65718a;
+  font-size: 0.65rem;
+  font-weight: 500;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+
+.mobile-nav-link[aria-current="page"] {
+  color: #3154c8;
+}
+
+.mobile-nav-link:hover {
+  color: #3154c8;
+  background: #f6f8ff;
+}
+
+.mobile-nav-link:focus-visible {
+  outline: 2px solid #4169e1;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --color-line: #9b9b96;
+  }
+}
