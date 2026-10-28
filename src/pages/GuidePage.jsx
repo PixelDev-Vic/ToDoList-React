@@ -37,9 +37,6 @@ export default function GuidePage() {
       <section>
         <p className="mb-3 text-sm font-medium text-accent">A short walkthrough</p>
         <h1 className="text-3xl font-semibold tracking-[-0.045em] text-ink sm:text-4xl">Using Daybook</h1>
-        <p className="mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
-          Capture tasks first, then organize them whenever you are ready.
-        </p>
       </section>
 
       <ol className="divide-y divide-line rounded-2xl border border-line bg-white px-5 sm:px-7">
