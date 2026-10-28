@@ -50,7 +50,7 @@ vercel.json   Vercel rewrite for client-side routes
 
 ## Assignment verification checklist
 
-- [ ] Open `/` and confirm the dashboard shows total, completed, and pending counts and links to the other pages.
+- [ ] Open `/` and confirm it redirects to `/home`, which displays the welcome message, task overview, total/completed/pending counts, and links to the other pages.
 - [ ] Open `/groups`, create a group, and confirm the new group appears.
 - [ ] Refresh the page and confirm user-created groups and tasks remain available.
 - [ ] Open each group and confirm only its tasks appear.

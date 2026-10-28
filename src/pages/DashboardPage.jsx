@@ -10,12 +10,12 @@ export default function DashboardPage({ tasks, groups, onAddTask, onToggleTask, 
   return (
     <div className="space-y-10">
       <section aria-labelledby="dashboard-title">
-        <p className="mb-3 text-sm font-medium text-accent">Your workspace</p>
+        <p className="mb-3 text-sm font-medium text-accent">Overview</p>
         <h1 id="dashboard-title" className="max-w-2xl text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.04] tracking-[-0.055em] text-ink">
-          A clear next step.
+          Welcome, user!
         </h1>
         <p className="mt-3 max-w-xl text-sm leading-6 text-muted sm:text-base">
-          Keep your tasks together, see what is finished, and focus on what comes next.
+          Here is your task overview. Track your progress, review completed and pending tasks, and organize your work into groups.
         </p>
       </section>
 

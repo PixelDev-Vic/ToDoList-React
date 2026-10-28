@@ -5,7 +5,7 @@ import { QuestionCircleIcon } from '@solar-icons/react/linear/question-circle'
 import { UserIcon } from '@solar-icons/react/linear/user'
 
 const navigationItems = [
-  { to: '/', label: 'Overview', Icon: HomeIcon, end: true },
+  { to: '/home', label: 'Overview', Icon: HomeIcon, end: true },
   { to: '/groups', label: 'Groups', Icon: FolderIcon },
   { to: '/guide', label: 'Guide', Icon: QuestionCircleIcon },
   { to: '/developers', label: 'Developers', Icon: UserIcon },
@@ -37,7 +37,7 @@ function NavigationLinks({ mobile = false }) {
 export function DesktopNavigation() {
   return (
     <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-line bg-white px-5 py-7 lg:flex">
-      <Link to="/" className="mb-11 flex items-center gap-3 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
+      <Link to="/home" className="mb-11 flex items-center gap-3 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
         <img src="/icons/daybook-icon.png" alt="" aria-hidden="true" className="size-10 rounded-[14px] object-cover" />
         <span>
           <span className="block text-base font-semibold tracking-tight text-ink">Daybook</span>

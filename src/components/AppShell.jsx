@@ -14,7 +14,7 @@ export default function AppShell({ undoEntry, onUndo, onDismissUndo }) {
       <DesktopNavigation />
 
       <header className="flex h-16 items-center justify-between border-b border-line bg-canvas/95 px-5 lg:hidden">
-        <Link to="/" className="flex items-center gap-2.5 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
+        <Link to="/home" className="flex items-center gap-2.5 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
           <img src="/icons/daybook-icon.png" alt="" aria-hidden="true" className="size-8 rounded-xl object-cover" />
           <span className="font-semibold tracking-tight">Daybook</span>
         </Link>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes, useNavigate } from 'react-router-dom'
 import AppShell from './components/AppShell.jsx'
 import DeleteGroupDialog from './components/DeleteGroupDialog.jsx'
 import { createId } from './data/createId.js'
@@ -171,7 +171,8 @@ function DaybookApp() {
     <>
       <Routes>
         <Route element={<AppShell undoEntry={undoEntry} onUndo={handleUndoDelete} onDismissUndo={handleDismissUndo} />}>
-          <Route index element={<DashboardPage tasks={tasks} groups={groups} onAddTask={handleAddTask} onToggleTask={handleToggleTask} onDeleteTask={handleDeleteTask} onUpdateTaskDetails={handleUpdateTaskDetails} />} />
+          <Route index element={<Navigate to="/home" replace />} />
+          <Route path="home" element={<DashboardPage tasks={tasks} groups={groups} onAddTask={handleAddTask} onToggleTask={handleToggleTask} onDeleteTask={handleDeleteTask} onUpdateTaskDetails={handleUpdateTaskDetails} />} />
           <Route path="groups" element={<GroupsPage groups={groups} tasks={tasks} onAddGroup={handleAddGroup} onRequestDeleteGroup={handleRequestDeleteGroup} />} />
           <Route path="groups/:groupId" element={<GroupTasksPage groups={groups} tasks={tasks} onAddTask={handleAddTask} onToggleTask={handleToggleTask} onDeleteTask={handleDeleteTask} onUpdateTaskDetails={handleUpdateTaskDetails} onRequestDeleteGroup={handleRequestDeleteGroup} />} />
           <Route path="guide" element={<GuidePage />} />
