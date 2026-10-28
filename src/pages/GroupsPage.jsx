@@ -38,7 +38,6 @@ export default function GroupsPage({ groups, tasks, onAddGroup, onRequestDeleteG
       <section aria-labelledby="create-group-title" className="space-y-3">
         <div>
           <h2 id="create-group-title" className="text-base font-semibold text-ink">Create a group</h2>
-          <p className="mt-1 text-sm text-muted">Give it a short name you will recognize.</p>
         </div>
         <form onSubmit={handleSubmit} className="rounded-2xl border border-line bg-white p-3 sm:flex sm:items-start sm:gap-3 sm:p-4">
           <div className="min-w-0 flex-1">
