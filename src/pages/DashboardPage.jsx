@@ -26,7 +26,6 @@ export default function DashboardPage({ tasks, groups, onAddTask, onToggleTask, 
       <section aria-labelledby="quick-note-title" className="space-y-3">
         <div>
           <h2 id="quick-note-title" className="text-lg font-semibold tracking-tight text-ink">Quick note</h2>
-          <p className="mt-1 text-sm text-muted">Capture it now. You can organize it into a group later.</p>
         </div>
         <QuickNoteForm onAddTask={onAddTask} />
       </section>
